@@ -1,43 +1,43 @@
 {
-  "name": "202205-w02ch02_irene-alonso",
-  "version": "1.0.0",
-  "description": "​\r Crea un modulo con funciones que repliquen, sin utilizar ninguno de los métodos ya existentes en el prototipo, los siguientes métodos de array: length, push, pop, unshift, shift, some, every, find, filter, map, findIndex, includes, indexOf, reduce, join",
-  "type": "module",
-  "main": "index.js",
-  "scripts": {
-    "test": "jest --watchAll --coverage",
-    "prepare": "husky install"
-  },
-  "repository": {
-    "type": "git",
-    "url": "git+https://github.com/airinpopcorn/202205-W02CH02_Irene-Alonso.git"
-  },
-  "keywords": [],
-  "author": "",
-  "license": "ISC",
-  "prettier": {
-    "singleQuote": true
-  },
-  "bugs": {
-    "url": "https://github.com/airinpopcorn/202205-W02CH02_Irene-Alonso/issues"
-  },
-  "homepage": "https://github.com/airinpopcorn/202205-W02CH02_Irene-Alonso#readme",
-  "devDependencies": {
-    "@babel/plugin-transform-modules-commonjs": "^7.17.12",
-    "eslint": "^8.15.0",
-    "eslint-config-airbnb-base": "^15.0.0",
-    "eslint-config-prettier": "^8.5.0",
-    "eslint-plugin-import": "^2.26.0",
-    "husky": "^8.0.1",
-    "jest": "^28.1.0"
-  },
-  "babel": {
-    "env": {
-      "test": {
-        "plugins": [
-          "@babel/plugin-transform-modules-commonjs"
-        ]
-      }
+    "name": "202205-w02ch02_irene-alonso",
+    "version": "1.0.0",
+    "description": "​",
+    "type": "module",
+    "main": "index.js",
+    "scripts": {
+        "test": "jest --watchAll --coverage",
+        "prepare": "husky install"
+    },
+    "repository": {
+        "type": "git",
+        "url": "git+https://github.com/airinpopcorn/202205-W02CH02_Irene-Alonso.git"
+    },
+    "keywords": [],
+    "author": "",
+    "license": "ISC",
+    "prettier": {
+        "singleQuote": true
+    },
+    "bugs": {
+        "url": "https://github.com/airinpopcorn/202205-W02CH02_Irene-Alonso/issues"
+    },
+    "homepage": "https://github.com/airinpopcorn/202205-W02CH02_Irene-Alonso#readme",
+    "devDependencies": {
+        "@babel/plugin-transform-modules-commonjs": "^7.17.12",
+        "eslint": "^8.15.0",
+        "eslint-config-airbnb-base": "^15.0.0",
+        "eslint-config-prettier": "^8.5.0",
+        "eslint-plugin-import": "^2.26.0",
+        "husky": "^8.0.1",
+        "jest": "^28.1.0"
+    },
+    "babel": {
+        "env": {
+            "test": {
+                "plugins": [
+                    "@babel/plugin-transform-modules-commonjs"
+                ]
+            }
+        }
     }
-  }
 }
