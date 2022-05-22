@@ -1,12 +1,25 @@
-let grid = [
-    [0, 0, 0, 0, 0],
-    [0, 0, 1, 0, 0],
-    [0, 0, 1, 0, 0],
-    [0, 0, 1, 0, 0],
-    [0, 0, 0, 0, 0],
-];
+/* eslint-disable no-debugger */
+let grid;
 let cols = 5;
 let rows = 5;
+
+function makeGrid(cols, rows) {
+    let grid = new Array(cols);
+    for (let i = 0; i < grid.length; i++) {
+        grid[i] = new Array(rows);
+    }
+    return grid;
+}
+
+function setUp() {
+    grid = makeGrid(cols, rows);
+    for (let i = 0; i < cols; i++) {
+        for (let j = 0; j < rows; j++) {
+            grid[i][j] = Math.round(Math.random());
+        }
+    }
+    return grid;
+}
 
 export function countNeighbors(grid, x, y) {
     let sum = 0;
@@ -21,8 +34,8 @@ export function countNeighbors(grid, x, y) {
     return sum;
 }
 
-export function checkValues() {
-    let nextGrid = [[], [], [], [], []];
+export function checkValues(grid, cols, rows) {
+    let nextGrid = makeGrid(cols, rows);
     for (let i = 0; i < cols; i++) {
         for (let j = 0; j < rows; j++) {
             let state = grid[i][j];
@@ -39,4 +52,6 @@ export function checkValues() {
     grid = nextGrid;
     return grid;
 }
+
+console.log(setUp());
 console.log(checkValues());
